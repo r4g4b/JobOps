@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your JobOps Account</title>
+
+    <!--Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/jobops-logo.svg">
+</head>
+
+<body class="flex min-h-screen flex-col bg-gray-50 text-black-900">
+    <header class="mx-auto flex max-w-6xl items-center justify-between px-2 py-3">
+        <a href="home.html" class="-ml-60 mt-3"><img src="../assets/jobops-logo.svg" alt="JobOps home" class="h-15"></a>
+        <nav class="flex items-center gap-4 text-base font-medium -mr-40">
+            <a href="login.html"
+                class="rounded-md px-3 py-2 text-black hover:rounded-md hover:bg-blue-500 hover:text-white duration-300 active:font-weight-bold">
+                Log in
+            </a>
+            <a href="registeration.html" class="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-500">
+                Create an Account
+            </a>
+        </nav>
+    </header>
+    <main class="mx-auto flex max-w-6xl flex-col-reverse items-center gap-12 px-6 py-12 md:flex-row md:justify-between">
+        <aside class="max-w-md">
+            <h1 class="text-4xl font-bold tracking-tight">
+                A faster way to your dream Job
+            </h1>
+            <p class="mt-4 text-lg text-gray-600">
+                Find your dream job with JobOps. Search easy, apply fast, and track every application in one place —
+                from the first click to the offer letter.
+            </p>
+        </aside>
+
+        <section class="w-full max-w-m rounded-xl border border-gray-200 bg-white p-6">
+            <div class="flex justify-center gap-5">
+                <a href="#" title="Sign up with Google" class="rounded-md border border-gray-300 p-2 hover:bg-gray-50">
+                    <img src="../assets/google.svg" alt="Google" class="block h-5">
+                </a>
+                <a href="#" title="Sign up with GitHub" class="rounded-md border border-gray-300 p-2 hover:bg-gray-50">
+                    <img src="../assets/github_light.svg" alt="GitHub" class="block h-5">
+                </a>
+                <a href="#" title="Sign up with LinkedIn"
+                    class="rounded-md border border-gray-300 p-2 hover:bg-gray-50">
+                    <img src="../assets/linkedin.svg" alt="LinkedIn" class="block h-5">
+                </a>
+            </div>
+
+            <div class="flex items-center gap-3 py-5 text-base text-gray-500">
+                <hr class="flex-1 border-t border-gray-300">
+                <span>Or</span>
+                <hr class="flex-1 border-t border-gray-300">
+            </div>
+
+            <form method="POST" action="#" class="space-y-4">
+                <div>
+                    <label for="full_name" class="mb-1 block text-base font-medium">Full Name</label>
+                    <input required type="text" id="full_name" title="Full Name" placeholder="Enter Your Full Name"
+                        name="full_name"
+                        class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder:text-gray-400 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                </div>
+                <div>
+                    <label for="email" class="mb-1 block text-base font-medium">Email Address</label>
+                    <input required type="email" id="email" name="email"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter Your Email Address"
+                        class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder:text-gray-400 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                </div>
+                <div>
+                    <label for="password" class="mb-1 block text-base font-medium">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Choose A Strong Password" required
+                        class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder:text-gray-400 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                </div>
+                <div>
+                    <label for="confirm_password" class="mb-1 block text-base font-medium">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password"
+                        placeholder="Confirm Your Password" required
+                        class="block w-full rounded-md border border-gray-300 px-3 py-2 placeholder:text-gray-400 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                </div>
+                <label class="flex items-start gap-2 text-base text-gray-600">
+                    <input type="checkbox" required class="mt-0.5 rounded border-gray-300">
+                    <span>I agree to the <a href="terms.html" class="underline text-blue-600">Terms of Service</a>
+                        and <a href="privacy.html" class="underline text-blue-600">Privacy Policy</a></span>
+                </label>
+                <button type="submit"
+                    class="w-full rounded-md bg-[#1E5BB3] px-4 py-2 font-medium text-white hover:bg-[#174a92]">
+                    Create Account
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer class="mt-auto border-t border-gray-200 bg-white">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 md:flex-row">
+            <a href="registeration.html" class="-ml-3 hover:bg-gray-200 p-1 hover:rounded-lg "><img
+                    src="../assets/jobops-logo.svg" alt="JobOps" class="h-9"></a>
+
+            <nav class="flex flex-wrap items-center justify-center gap-6 text-base font-medium text-gray-600">
+                <a href="#" class="hover:text-white hover:bg-blue-500 hover:rounded-lg hover:p-2 duration-400">About</a>
+                <a href="#" class="hover:text-white hover:bg-blue-500 hover:rounded-lg hover:p-2 duration-400">Contact
+                    Us</a>
+                <a href="#"
+                    class="hover:text-white hover:bg-blue-500 hover:rounded-lg hover:p-2 duration-400">Partnerships</a>
+                <a href="privacy.html"
+                    class="hover:text-white hover:bg-blue-500 hover:rounded-lg hover:p-2 duration-400">Privacy
+                    Policy</a>
+                <a href="terms.html"
+                    class="hover:text-white hover:bg-blue-500 hover:rounded-lg hover:p-2 duration-400">Terms of
+                    Service</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="#" title="GitHub" class="rounded-md border border-gray-300 p-2 hover:bg-gray-200"
+                    aria-label="GitHub">
+                    <img src="../assets/github_light.svg" alt="GitHub" class="block h-5">
+                </a>
+                <a href="#" title="Facebook" class="rounded-md border border-gray-300 p-2 hover:bg-gray-200"
+                    aria-label="Facebook">
+                    <img src="../assets/facebook-icon.svg" alt="Facebook" class="block h-5">
+                </a>
+                <a href="#" title="LinkedIn" class="rounded-md border border-gray-300 p-2 hover:bg-gray-200"
+                    aria-label="LinkedIn">
+                    <img src="../assets/linkedin.svg" alt="LinkedIn" class="block h-5">
+                </a>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-100">
+        </div>
+    </footer>
+</body>
+
+</html>
