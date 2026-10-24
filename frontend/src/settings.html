@@ -16,14 +16,18 @@
         <nav>
             <ul class="flex gap-10">
                 <li class="m-2 text-lg">
-                    <a href="dashboard.html" class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Dashboard</a>
+                    <a href="dashboard.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Dashboard</a>
                 </li>
                 <li class="m-2 text-lg"><a href="Applications.html"
-                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Applications</a></li>
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Applications</a>
+                </li>
                 <li class="m-2 text-lg"><a href="profile.html"
-                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Profile</a></li>
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Profile</a>
+                </li>
                 <li class="m-2 text-lg"><a href="settings.html"
-                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Settings</a></li>
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Settings</a>
+                </li>
             </ul>
         </nav>
         <!--Profile image for more info-->
@@ -55,7 +59,7 @@
         <div class="mt-10 grid items-start gap-8 lg:grid-cols-4">
             <aside class="space-y-6 lg:col-span-1">
                 <section class="rounded-2xl border border-gray-200 bg-white p-6">
-                    <h2 class="text-xl font-medium text-gray-900">Account</h2>
+                    <h2 class="text-xl font-medium text-gray-900">Account Security</h2>
 
                     <div class="mt-4 space-y-4 text-sm">
                         <div>
@@ -79,7 +83,6 @@
                     <h2 class="text-xl font-medium text-gray-900">Your data</h2>
                     <a href="#" class="mt-4 inline-block font-medium text-[#1E5BB3] hover:underline">Export
                         applications</a>
-                    <p class="mt-1 text-sm text-gray-500">Includes all 24 applications.</p>
                     <a href="#" class="mt-6 inline-block font-medium text-red-600 hover:underline">Delete my account</a>
                 </section>
             </aside>
@@ -118,28 +121,52 @@
                                     Monday.</span>
                             </span>
                         </label>
+
+                        <label class="flex items-start gap-3">
+                            <input type="checkbox" name="status_updates" checked
+                                class="mt-1 h-4 w-4 rounded border-gray-300 accent-[#1E5BB3]">
+                            <span>
+                                <span class="block font-semibold text-gray-900">Application status changes</span>
+                                <span class="block text-sm text-gray-500">Receive an email when the status of any
+                                    application changes.</span>
+                            </span>
+                        </label>
                     </div>
 
                     <div class="mt-8">
                         <h2 class="text-2xl font-medium text-gray-900">Preferences</h2>
 
                         <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
-                            <div>
-                                <label for="language" class="mb-2 block font-semibold text-gray-900">Language</label>
-                                <select id="language" name="language"
-                                    class="block w-full rounded-md border border-gray-300 bg-white px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
-                                    <option selected>English</option>
-                                    <option>Arabic</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="mode" class="mb-2 block font-semibold text-gray-900">Mode</label>
-                                <select id="mode" name="mode"
-                                    class="block w-full rounded-md border border-gray-300 bg-white px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
-                                    <option selected>Light</option>
-                                    <option>Dark</option>
-                                </select>
-                            </div>
+                            <fieldset>
+                                <legend class="mb-2 block font-semibold text-gray-900">Language</legend>
+                                <div class="flex items-center gap-6">
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="language" value="english" checked
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        English
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="language" value="arabic"
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        Arabic
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="mb-2 block font-semibold text-gray-900">Mode</legend>
+                                <div class="flex items-center gap-6">
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="light" checked
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        Light
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="dark"
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        Dark
+                                    </label>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                 </section>
