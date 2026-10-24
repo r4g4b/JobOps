@@ -48,6 +48,121 @@
             </ul>
         </div>
     </header>
+    <main class="mx-auto w-full max-w-7xl px-6 py-10">
+        <h1 class="text-4xl font-medium tracking-tight text-gray-900">Career profile</h1>
+        <div class="mt-10 grid grid-cols-4 items-start gap-8 ">
+            <aside class="col-span-1 space-y-6">
+                <section class="rounded-2xl border border-gray-200 bg-white p-6">
+                    <div
+                        class="flex h-16 w-16 items-center justify-center rounded-full bg-gray-200 text-xl font-medium text-gray-600">
+                        AR
+                    </div>
+                    <h2 class="mt-5 text-xl font-semibold text-gray-900">Ahmed Ragab</h2>
+                    <p class="mt-2 text-gray-500">Softwar Engineer</p>
+                    <p class="mt-1 text-sm text-gray-500">Giza, Egypt</p>
+                    <!-- <a href="#" class="mt-6 inline-block font-medium text-[#1E5BB3] hover:underline">Change photo</a> -->
+                    <!-- <p class="mt-4 text-sm text-gray-500">JPG or PNG, up to 5 MB.</p> -->
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6">
+                    <h2 class="text-xl font-medium text-gray-900">Profile Visiblity</h2>
+                    <p class="mt-4 text-gray-500">Your profile is private. JobOps never shares it with employers.</p>
+                    <p class="mt-4 text-sm text-gray-500">Member since <span class="font-bold">October 2026</span></p>
+                </section>
+            </aside>
+
+            <form method="POST" action="#" class="col-span-3">
+                <section class="rounded-2xl border border-gray-200 bg-white p-6">
+                    <h2 class="text-2xl font-medium text-gray-900">Personal information</h2>
+
+                    <div class="mt-6 grid grid-cols-2 gap-x-6 gap-y-6">
+                        <div>
+                            <label for="full_name" class="mb-2 block font-semibold text-gray-900">Full name *</label>
+                            <input required type="text" id="full_name" name="full_name" value="Ahmed Ragab"
+                                autocomplete="name"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                        <div>
+                            <label for="email" class="mb-2 block font-semibold text-gray-900">Email address *</label>
+                            <input required type="email" id="email" name="email" value="s-ahmed.ragab@zewailcity.edu.eg"
+                                placeholder="Enter your email address" autocomplete="email"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+
+                        </div>
+                        <div>
+                            <label for="current_role" class="mb-2 block font-semibold text-gray-900">Current
+                                role</label>
+                            <input type="text" id="current_role" name="current_role" value="Software Engineer"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                        <div>
+                            <label for="location" class="mb-2 block font-semibold text-gray-900">Location</label>
+                            <input type="text" id="location" name="location" value="Giza, Egypt"
+                                autocomplete="address-level2"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                        <div class="col-span-2">
+                            <label for="portfolio" class="mb-2 block font-semibold text-gray-900">Portfolio URL</label>
+                            <input type="url" id="portfolio" name="portfolio" value="https://r4g4b.gitbook.io"
+                                placeholder="Link to your work" autocomplete="url"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                        <div class="col-span-2">
+                            <label for="portfolio" class="mb-2 block font-semibold text-gray-900">Linkedin</label>
+                            <input type="url" id="portfolio" name="portfolio" placeholder="linkedin.com/in/USERNAME"
+                                value="linkedin.com/ahmed-ragab12" autocomplete="url"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-8 rounded-2xl border border-gray-200 bg-white p-6">
+                    <h2 class="text-2xl font-medium text-gray-900">Career preferences</h2>
+
+                    <div class="mt-6 grid grid-cols-2 gap-x-6 gap-y-6">
+                        <div>
+                            <label for="target_role" class="mb-2 block font-semibold text-gray-900">Target role</label>
+                            <input type="text" id="target_role" name="target_role" value="Product Designer"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                        <div>
+                            <label for="arrangement" class="mb-2 block font-semibold text-gray-900">Preferred work
+                                arrangement</label>
+                            <select id="arrangement" name="arrangement"
+                                class="block w-full rounded-md border border-gray-300 bg-white px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                                <option>On site</option>
+                                <option selected>Hybrid or remote</option>
+                                <option>Remote only</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="preferred_location" class="mb-2 block font-semibold text-gray-900">Preferred
+                                location</label>
+                            <input type="text" id="preferred_location" name="preferred_location"
+                                value="San Francisco or US remote"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                        <div>
+                            <label for="salary" class="mb-2 block font-semibold text-gray-900">Target salary (USD /
+                                year)</label>
+                            <input type="text" id="salary" name="salary" value="$150,000–$180,000"
+                                class="block w-full rounded-md border border-gray-300 px-4 py-3 duration-200 focus:border-[#1E5BB3] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/30">
+                        </div>
+                    </div>
+                </section>
+                <div class="mt-8 flex items-center gap-3">
+                    <button type="submit"
+                        class="rounded-lg bg-[#1E5BB3] px-6 py-3.5 font-medium text-white duration-200 hover:bg-[#174a92] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/40">
+                        Save changes
+                    </button>
+                    <a href="home.html"
+                        class="rounded-lg border border-gray-200 bg-white px-6 py-3.5 font-medium text-[#1E5BB3] duration-200 hover:bg-gray-100">
+                        Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
 
 </body>
 
