@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit application</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+
+  <body class="bg-white text-gray-900">
+    <header
+      class="flex items-center justify-between border-b border-gray-300 px-6 py-3"
+    >
+      <a href="home.html"
+        ><img src="../assets/jobops-logo.svg" alt="JobOps" class="h-8"
+      /></a>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li>
+            <a href="applications.html" class="font-bold text-[#1E5BB3]"
+              >Applications</a
+            >
+          </li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-6 py-8">
+      <h1 class="mt-4 text-3xl font-bold">Edit application</h1>
+      <p class="mt-1 text-gray-600">
+        Keep the details up to date as your application moves forward.
+      </p>
+
+      <div class="mt-6 grid gap-8 lg:grid-cols-3">
+        <form class="space-y-6 lg:col-span-2">
+          <section class="rounded-xl border border-gray-200 p-5">
+            <h2 class="text-lg font-semibold">Role and company</h2>
+            <div class="mt-4 grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="company" class="block text-sm font-medium"
+                  >Company *</label
+                >
+                <input
+                  id="company"
+                  type="text"
+                  value="Figma"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                />
+              </div>
+              <div>
+                <label for="role" class="block text-sm font-medium"
+                  >Role *</label
+                >
+                <input
+                  id="role"
+                  type="text"
+                  value="Product Designer"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                />
+              </div>
+              <div class="sm:col-span-2">
+                <label for="url" class="block text-sm font-medium"
+                  >Job posting URL</label
+                >
+                <input
+                  id="url"
+                  type="url"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                />
+              </div>
+              <div>
+                <label for="location" class="block text-sm font-medium"
+                  >Location</label
+                >
+                <input
+                  id="location"
+                  type="text"
+                  value="San Francisco, CA"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                />
+              </div>
+              <div>
+                <label for="arrangement" class="block text-sm font-medium"
+                  >Work arrangement</label
+                >
+                <select
+                  id="arrangement"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                >
+                  <option>On site</option>
+                  <option>Hybrid</option>
+                  <option>Remote</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-xl border border-gray-200 p-5">
+            <h2 class="text-lg font-semibold">Application progress</h2>
+            <div class="mt-4 grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="status" class="block text-sm font-medium"
+                  >Status *</label
+                >
+                <select
+                  id="status"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                >
+                  <option>Saved</option>
+                  <option>Applied</option>
+                  <option>Interviewing</option>
+                  <option>Offered</option>
+                  <option>Closed</option>
+                </select>
+              </div>
+              <div>
+                <label for="date" class="block text-sm font-medium"
+                  >Date applied *</label
+                >
+                <input
+                  id="date"
+                  type="date"
+                  value="2026-10-20"
+                  required
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                />
+              </div>
+              <div>
+                <label for="salary" class="block text-sm font-medium"
+                  >Salary range (USD / year)</label
+                >
+                <input
+                  id="salary"
+                  type="text"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                />
+              </div>
+              <div>
+                <label for="source" class="block text-sm font-medium"
+                  >Source</label
+                >
+                <select
+                  id="source"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                >
+                  <option>Company careers site</option>
+                  <option>LinkedIn</option>
+                  <option>Referral</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-xl border border-gray-200 p-5">
+            <h2 class="text-lg font-semibold">Notes and documents</h2>
+            <label for="notes" class="mt-4 block text-sm font-medium"
+              >Notes</label
+            >
+            <textarea
+              id="notes"
+              rows="4"
+              class="w-full rounded-md border border-gray-300 px-3 py-2"
+              placeholder="Prepare onboarding redesign and component library case studies for the portfolio review."
+            ></textarea>
+          </section>
+
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <button
+              type="submit"
+              class="rounded-lg bg-[#1E5BB3] px-6 py-3 text-white"
+            >
+              Save changes
+            </button>
+            <a
+              href="application-detail.html"
+              class="rounded-lg border border-gray-300 px-6 py-3 text-center text-[#1E5BB3]"
+              >Cancel</a
+            >
+          </div>
+        </form>
+
+        <aside class="h-fit rounded-xl border border-gray-200 p-5">
+          <h2 class="font-semibold">A record that grows with you</h2>
+          <p class="mt-3 text-sm text-gray-600">
+            Add what you know now. You can update your status, notes, and
+            documents at any time.
+          </p>
+          <p class="mt-3 text-sm text-gray-600">
+            Your next interview stays on the application detail page.
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-200 px-6 py-4 text-xs text-gray-600">
+      © 2026 JobOps
+    </footer>
+  </body>
+</html>
