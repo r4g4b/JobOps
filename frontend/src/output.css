@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
+    --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
@@ -287,6 +288,9 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .-ml-3 {
     margin-left: calc(var(--spacing) * -3);
   }
@@ -325,6 +329,9 @@
   }
   .h-\[10\%\] {
     height: 10%;
+  }
+  .h-fit {
+    height: fit-content;
   }
   .h-px {
     height: 1px;
@@ -519,6 +526,9 @@
   .bg-\[\#1E5BB3\] {
     background-color: #1E5BB3;
   }
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -539,6 +549,9 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
@@ -573,11 +586,23 @@
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .py-16 {
+    padding-block: calc(var(--spacing) * 16);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
   }
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
@@ -730,6 +755,36 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .file\:mr-4::file-selector-button {
+    margin-right: calc(var(--spacing) * 4);
+  }
+  .file\:rounded-md::file-selector-button {
+    border-radius: var(--radius-md);
+  }
+  .file\:border-0::file-selector-button {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
+  .file\:bg-\[\#1E5BB3\]::file-selector-button {
+    background-color: #1E5BB3;
+  }
+  .file\:px-4::file-selector-button {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .file\:py-2::file-selector-button {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .file\:text-sm::file-selector-button {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .file\:font-medium::file-selector-button {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .file\:text-white::file-selector-button {
+    color: var(--color-white);
+  }
   .placeholder\:text-gray-400::placeholder {
     color: var(--color-gray-400);
   }
@@ -754,6 +809,9 @@
     }
     .hover\:underline:hover {
       text-decoration-line: underline;
+    }
+    .hover\:file\:bg-\[\#174a92\]:hover::file-selector-button {
+      background-color: #174a92;
     }
   }
   .focus\:border-\[\#1E5BB3\]:focus {
@@ -781,8 +839,14 @@
     outline-style: none;
   }
   @media (width >= 40rem) {
+    .sm\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:flex-row {
+      flex-direction: row;
     }
     .sm\:px-6 {
       padding-inline: calc(var(--spacing) * 6);
@@ -799,8 +863,26 @@
     .md\:order-2 {
       order: 2;
     }
+    .md\:block {
+      display: block;
+    }
+    .md\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
+    }
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .md\:flex-row {
+      flex-direction: row;
+    }
+    .md\:items-center {
+      align-items: center;
+    }
+    .md\:justify-between {
+      justify-content: space-between;
     }
     .md\:gap-16 {
       gap: calc(var(--spacing) * 16);
@@ -813,8 +895,14 @@
     .lg\:col-span-1 {
       grid-column: span 1 / span 1;
     }
+    .lg\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
     .lg\:col-span-3 {
       grid-column: span 3 / span 3;
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
