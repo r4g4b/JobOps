@@ -16,39 +16,27 @@
         <nav>
             <ul class="flex gap-10">
                 <li class="m-2 text-lg">
-                    <a href="home.html"
-                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Home Page</a>
-            
+                    <a href="dashboard.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Dashboard</a>
+                </li>
+                <li class="m-2 text-lg"><a href="Applications.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Applications</a>
+                </li>
+                <li class="m-2 text-lg"><a href="profile.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Profile</a>
+                </li>
+                <li class="m-2 text-lg"><a href="settings.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Settings</a>
+                </li>
             </ul>
         </nav>
-        <!--Profile image for more info-->
-        <div>
-            <button type="button" popovertarget="profile-list" aria-label="Open profile menu"
-                class="cursor-pointer rounded-lg bg-gray-100 text-black transition-colors duration-200 hover:bg-gray-200">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="block h-10 w-10" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                </svg>
-            </button>
-            <ul id="profile-list" popover
-                class="fixed inset-auto right-6 top-[4.75rem] m-0 w-56 rounded-xl border border-gray-200 bg-white p-0 py-2 ">
-                <li class="border-b border-gray-100 px-4 py-2">
-                    <p class="text-sm font-semibold">Ahmed Ragab</p>
-                    <p class="text-sm text-gray-500">s-ahmed.ragab@zewailcity.edu.eg</p>
-                </li>
-                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">My Profile</a></li>
-                <li><a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Settings</a></li>
-                <li><a href="login.html" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Log out</a></li>
-            </ul>
-        </div>
     </header>
 
     <main class="mx-auto w-full max-w-7xl px-6 py-10">
         <h1 class="text-4xl font-medium tracking-tight text-gray-900">Settings and Privacy</h1>
 
         <div class="mt-10 grid items-start gap-8 lg:grid-cols-4">
-            <aside class="space-y-6 lg:col-span-1">
+            <aside class="lg:col-span-1">
                 <section class="rounded-2xl border border-gray-200 bg-white p-6">
                     <h2 class="text-xl font-medium text-gray-900">Account Security</h2>
 
@@ -65,16 +53,17 @@
                             <a href="#" class="mt-1 inline-block font-medium text-[#1E5BB3] hover:underline">Change
                                 password</a>
                         </div>
-                        <a href="#" class="inline-block font-medium text-[#1E5BB3] hover:underline">Log out of all
-                            devices</a>
+                        <a href="login.html"
+                            class="inline-block rounded-lg border border-gray-200 px-4 py-2 font-medium text-[#1E5BB3] duration-200 hover:bg-gray-100">Log
+                            out</a>
                     </div>
-                </section>
 
-                <section class="rounded-2xl border border-gray-200 bg-white p-6">
-                    <h2 class="text-xl font-medium text-gray-900">Your data</h2>
-                    <a href="#" class="mt-4 inline-block font-medium text-[#1E5BB3] hover:underline">Export
-                        applications</a>
-                    <a href="#" class="mt-6 inline-block font-medium text-red-600 hover:underline">Delete my account</a>
+                    <div class="mt-6">
+                        <h2 class="text-xl font-medium text-gray-900">Your data</h2>
+                        <a href="#" class="mt-4 inline-block font-medium text-[#1E5BB3] hover:underline">Export
+                            applications</a>
+                        <a href="#" class="mt-6 inline-block font-medium text-red-600 hover:underline">Delete my account</a>
+                    </div>
                 </section>
             </aside>
 
@@ -147,7 +136,12 @@
                                 <legend class="mb-2 block font-semibold text-gray-900">Mode</legend>
                                 <div class="flex items-center gap-6">
                                     <label class="flex items-center gap-2">
-                                        <input type="radio" name="mode" value="light" checked
+                                        <input type="radio" name="mode" value="system" checked
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        System
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="light"
                                             class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
                                         Light
                                     </label>
@@ -210,7 +204,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
