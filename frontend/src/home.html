@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="output.css?v=2">
+    <link rel="icon" type="image/svg+xml" href="../assets/jobops-logo.svg">
+</head>
+
+<body class="flex min-h-screen flex-col">
+    <!-- Logo + Navigation bar-->
+    <header class="flex justify-between border-b-2 border-gray-300 w-[100%]">
+        <a href="home.html" class="h-[10%] w-1/10"><img src="../assets/jobops-logo.svg" alt="JobOps Logo"> </a>
+
+        <nav class="flex items-center gap-4 pr-6">
+            <a href="settings.html"class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Settings</a>
+            <a href="login.html" class="text-sm text-[#1E5BB3]">Login</a>
+            <a href="registeration.html" class="hidden rounded-md bg-[#1E5BB3] px-4 py-2 text-sm text-white md:block">Get Started</a>
+        </nav>
+        
+    </header>
+
+
+    <main class="flex-1">
+        <section class="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-16 md:flex-row md:items-center">
+            <div class="md:w-1/2">
+                <p class="mb-4 text-xs font-medium uppercase text-[#1E5BB3]">A little more clarity</p>
+                <h1 class="text-4xl font-medium">Your job search. All in one place.</h1>
+                <p class="mt-4 text-sm text-gray-500">Keep track of every application, prepare for what's next, and move forward with confidence.</p>
+                <div class="mt-6 flex items-center gap-4">
+                    <a href="registeration.html" class="rounded-md bg-[#1E5BB3] px-4 py-2 text-sm text-white">Start tracking for free</a>
+                    <a href="login.html" class="text-sm text-[#1E5BB3]">Log in →</a>
+                </div>
+            </div>
+        </section>
+
+         <section class="mx-auto max-w-6xl px-6 py-10">
+        <h2 class="text-2xl font-medium">Less juggling. More moving forward.</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <div class="rounded-lg border border-gray-200 p-5">
+                <h3 class="font-medium">Keep everything together</h3>
+                <p class="mt-3 text-xs text-[#1E5BB3]">01</p>
+                <p class="mt-3 text-sm text-gray-500">Company, role, dates, and notes. One clear record for every opportunity.</p>
+            </div>
+            <div class="rounded-lg border border-gray-200 p-5">
+                <h3 class="font-medium">Know where you stand</h3>
+                <p class="mt-3 text-xs text-[#1E5BB3]">02</p>
+                <p class="mt-3 text-sm text-gray-500">See your progress from applied to offer, without another spreadsheet.</p>
+            </div>
+            <div class="rounded-lg border border-gray-200 p-5">
+                <h3 class="font-medium">Be ready for what's next</h3>
+                <p class="mt-3 text-xs text-[#1E5BB3]">03</p>
+                <p class="mt-3 text-sm text-gray-500">Keep interview details and follow-ups close, so nothing gets missed.</p>
+            </div>
+        </div>
+    </section>
+
+     <section class="mx-auto max-w-6xl px-6 py-10">
+        <div class="flex flex-col gap-4 rounded-lg bg-blue-50 p-8 md:flex-row md:items-center md:justify-between">
+            <div>
+                <h2 class="text-xl font-medium">Make room for your next career move.</h2>
+                <p class="mt-2 text-sm text-gray-500">Start with one application. Build clarity from there.</p>
+            </div>
+            <a href="registeration.html" class="rounded-md bg-[#1E5BB3] px-4 py-2 text-center text-sm text-white">Create your free account</a>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-300 px-6 py-4">
+        <div class="mx-auto flex max-w-6xl justify-between text-xs text-gray-500">
+        <p>© 2026 JobOps</p>
+        <p>Privacy · Help</p>
+    </div>
+    </footer>
+
+    </main>
