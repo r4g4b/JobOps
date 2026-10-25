@@ -48,7 +48,7 @@
         <h1 class="text-4xl font-medium tracking-tight text-gray-900">Settings and Privacy</h1>
 
         <div class="mt-10 grid items-start gap-8 lg:grid-cols-4">
-            <aside class="space-y-6 lg:col-span-1">
+            <aside class="lg:col-span-1">
                 <section class="rounded-2xl border border-gray-200 bg-white p-6">
                     <h2 class="text-xl font-medium text-gray-900">Account Security</h2>
 
@@ -68,13 +68,13 @@
                         <a href="#" class="inline-block font-medium text-[#1E5BB3] hover:underline">Log out of all
                             devices</a>
                     </div>
-                </section>
 
-                <section class="rounded-2xl border border-gray-200 bg-white p-6">
-                    <h2 class="text-xl font-medium text-gray-900">Your data</h2>
-                    <a href="#" class="mt-4 inline-block font-medium text-[#1E5BB3] hover:underline">Export
-                        applications</a>
-                    <a href="#" class="mt-6 inline-block font-medium text-red-600 hover:underline">Delete my account</a>
+                    <div class="mt-6">
+                        <h2 class="text-xl font-medium text-gray-900">Your data</h2>
+                        <a href="#" class="mt-4 inline-block font-medium text-[#1E5BB3] hover:underline">Export
+                            applications</a>
+                        <a href="#" class="mt-6 inline-block font-medium text-red-600 hover:underline">Delete my account</a>
+                    </div>
                 </section>
             </aside>
 
@@ -147,7 +147,12 @@
                                 <legend class="mb-2 block font-semibold text-gray-900">Mode</legend>
                                 <div class="flex items-center gap-6">
                                     <label class="flex items-center gap-2">
-                                        <input type="radio" name="mode" value="light" checked
+                                        <input type="radio" name="mode" value="system" checked
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        System
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="light"
                                             class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
                                         Light
                                     </label>
