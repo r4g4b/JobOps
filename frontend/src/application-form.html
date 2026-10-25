@@ -41,24 +41,20 @@
             <div class="mt-4 grid gap-4 sm:grid-cols-2">
               <div>
                 <label for="company" class="block text-sm font-medium"
-                  >Company *</label
+                  >Company</label
                 >
                 <input
                   id="company"
                   type="text"
-                  value="Figma"
                   required
                   class="w-full rounded-md border border-gray-300 px-3 py-2"
                 />
               </div>
               <div>
-                <label for="role" class="block text-sm font-medium"
-                  >Role *</label
-                >
+                <label for="role" class="block text-sm font-medium">Role</label>
                 <input
                   id="role"
                   type="text"
-                  value="Product Designer"
                   required
                   class="w-full rounded-md border border-gray-300 px-3 py-2"
                 />
@@ -80,7 +76,6 @@
                 <input
                   id="location"
                   type="text"
-                  value="San Francisco, CA"
                   class="w-full rounded-md border border-gray-300 px-3 py-2"
                 />
               </div>
@@ -105,7 +100,7 @@
             <div class="mt-4 grid gap-4 sm:grid-cols-2">
               <div>
                 <label for="status" class="block text-sm font-medium"
-                  >Status *</label
+                  >Status</label
                 >
                 <select
                   id="status"
@@ -121,12 +116,11 @@
               </div>
               <div>
                 <label for="date" class="block text-sm font-medium"
-                  >Date applied *</label
+                  >Date applied</label
                 >
                 <input
                   id="date"
                   type="date"
-                  value="2026-10-20"
                   required
                   class="w-full rounded-md border border-gray-300 px-3 py-2"
                 />
@@ -200,22 +194,80 @@
             >
           </div>
         </form>
-
-        <aside class="h-fit rounded-xl border border-gray-200 p-5">
-          <h2 class="font-semibold">A record that grows with you</h2>
-          <p class="mt-3 text-sm text-gray-600">
-            Add what you know now. You can update your status, notes, and
-            documents at any time.
-          </p>
-          <p class="mt-3 text-sm text-gray-600">
-            Your next interview stays on the application detail page.
-          </p>
-        </aside>
       </div>
     </main>
 
-    <footer class="border-t border-gray-200 px-6 py-4 text-xs text-gray-600">
-      © 2026 JobOps
+    <footer class="mt-auto border-t border-gray-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6"
+      >
+        <nav class="flex items-center gap-1 text-sm font-medium text-gray-600">
+          <a
+            href="#"
+            class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"
+            >About</a
+          >
+          <a
+            href="#"
+            class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"
+            >Contact Us</a
+          >
+          <a
+            href="#"
+            class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"
+            >Partnerships</a
+          >
+          <a
+            href="privacy.html"
+            class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"
+            >Privacy Policy</a
+          >
+          <a
+            href="terms.html"
+            class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"
+            >Terms of Service</a
+          >
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a
+            href="#"
+            title="GitHub"
+            aria-label="GitHub"
+            class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100"
+          >
+            <img
+              src="../assets/github_light.svg"
+              alt="GitHub"
+              class="block h-5"
+            />
+          </a>
+          <a
+            href="#"
+            title="Facebook"
+            aria-label="Facebook"
+            class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100"
+          >
+            <img
+              src="../assets/facebook-icon.svg"
+              alt="Facebook"
+              class="block h-5"
+            />
+          </a>
+          <a
+            href="#"
+            title="LinkedIn"
+            aria-label="LinkedIn"
+            class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100"
+          >
+            <img
+              src="../assets/linkedin.svg"
+              alt="LinkedIn"
+              class="block h-5"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
