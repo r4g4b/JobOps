@@ -1,0 +1,4 @@
+*.css
+!frontend/src/input.css
+node_modules/
+.DS_Store

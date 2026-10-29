@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobOps Settings</title>
+    <link rel="stylesheet" href="output.css?v=4">
+    <link rel="icon" type="image/svg+xml" href="../assets/jobops-logo.svg">
+</head>
+
+<body class="flex min-h-screen flex-col">
+    <!-- Logo + Navigation bar-->
+    <header class="flex w-full flex-col items-center gap-2 border-b-2 border-gray-300 px-4 py-2 sm:flex-row sm:justify-between sm:px-6">
+        <a href="home.html" class="shrink-0"><img src="../assets/jobops-logo.svg" alt="JobOps Logo" class="h-12 w-auto">
+        </a>
+        <nav class="w-full sm:w-auto">
+            <ul class="flex flex-wrap justify-center gap-1 sm:gap-6 md:gap-10">
+                <li class="text-base sm:text-lg">
+                    <a href="dashboard.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Dashboard</a>
+                </li>
+                <li class="text-base sm:text-lg"><a href="Applications.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Applications</a>
+                </li>
+                <li class="text-base sm:text-lg"><a href="profile.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Profile</a>
+                </li>
+                <li class="text-base sm:text-lg"><a href="settings.html"
+                        class="block rounded-md bg-[#1E5BB3] p-2 font-medium text-white duration-200 transition-colors hover:bg-[#174a92]">Settings</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
+        <h1 class="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">Settings and Privacy</h1>
+
+        <div class="mt-8 grid items-start gap-6 lg:mt-10 lg:grid-cols-4 lg:gap-8">
+            <aside class="lg:col-span-1">
+                <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
+                    <h2 class="text-xl font-medium text-gray-900">Account Security</h2>
+
+                    <div class="mt-4 space-y-4 text-sm">
+                        <div>
+                            <p class="text-gray-500">Email</p>
+                            <p class="mt-1 break-words text-gray-900">s-ahmed.ragab@zewailcity.edu.eg</p>
+                            <a href="#" class="mt-1 inline-block font-medium text-[#1E5BB3] hover:underline">Change
+                                email</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Password</p>
+                            <p class="mt-1 text-gray-900">Updated Oct 1, 2026</p>
+                            <a href="#" class="mt-1 inline-block font-medium text-[#1E5BB3] hover:underline">Change
+                                password</a>
+                        </div>
+                        <a href="login.html"
+                            class="inline-block rounded-lg border border-gray-200 px-4 py-2 font-medium text-[#1E5BB3] duration-200 hover:bg-gray-100">Log
+                            out</a>
+                    </div>
+
+                    <div class="mt-6">
+                        <h2 class="text-xl font-medium text-gray-900">Your data</h2>
+                        <a href="#" class="mt-4 inline-block font-medium text-[#1E5BB3] hover:underline">Export
+                            applications</a>
+                        <a href="#" class="mt-6 inline-block font-medium text-red-600 hover:underline">Delete my account</a>
+                    </div>
+                </section>
+            </aside>
+
+            <form action="#" method="post" class="space-y-6 lg:col-span-3 lg:space-y-8">
+                <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
+                    <h2 class="text-xl font-medium text-gray-900 sm:text-2xl">Notifications</h2>
+                    <p class="mt-2 text-gray-500">Choose which emails you receive from JobOps.</p>
+
+                    <div class="mt-6 space-y-5">
+                        <label class="flex items-start gap-3">
+                            <input type="checkbox" name="interview_reminders" checked
+                                class="mt-1 h-4 w-4 rounded border-gray-300 accent-[#1E5BB3]">
+                            <span>
+                                <span class="block font-semibold text-gray-900">Interview reminders</span>
+                                <span class="block text-sm text-gray-500">A reminder 24 hours before each
+                                    interview.</span>
+                            </span>
+                        </label>
+
+                        <label class="flex items-start gap-3">
+                            <input type="checkbox" name="followup_reminders" checked
+                                class="mt-1 h-4 w-4 rounded border-gray-300 accent-[#1E5BB3]">
+                            <span>
+                                <span class="block font-semibold text-gray-900">Follow-up reminders</span>
+                                <span class="block text-sm text-gray-500">A nudge when it's time to check in.</span>
+                            </span>
+                        </label>
+
+                        <label class="flex items-start gap-3">
+                            <input type="checkbox" name="weekly_summary"
+                                class="mt-1 h-4 w-4 rounded border-gray-300 accent-[#1E5BB3]">
+                            <span>
+                                <span class="block font-semibold text-gray-900">Weekly summary</span>
+                                <span class="block text-sm text-gray-500">Your application activity, every
+                                    Monday.</span>
+                            </span>
+                        </label>
+
+                        <label class="flex items-start gap-3">
+                            <input type="checkbox" name="status_updates" checked
+                                class="mt-1 h-4 w-4 rounded border-gray-300 accent-[#1E5BB3]">
+                            <span>
+                                <span class="block font-semibold text-gray-900">Application status changes</span>
+                                <span class="block text-sm text-gray-500">Receive an email when the status of any
+                                    application changes.</span>
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="mt-8">
+                        <h2 class="text-xl font-medium text-gray-900 sm:text-2xl">Preferences</h2>
+
+                        <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+                            <fieldset>
+                                <legend class="mb-2 block font-semibold text-gray-900">Language</legend>
+                                <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="language" value="english" checked
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        English
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="language" value="arabic"
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        Arabic
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="mb-2 block font-semibold text-gray-900">Mode</legend>
+                                <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="system" checked
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        System
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="light"
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        Light
+                                    </label>
+                                    <label class="flex items-center gap-2">
+                                        <input type="radio" name="mode" value="dark"
+                                            class="h-4 w-4 border-gray-300 accent-[#1E5BB3]">
+                                        Dark
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                    <button type="submit"
+                        class="w-full rounded-lg bg-[#1E5BB3] px-6 py-3.5 font-medium text-white duration-200 hover:bg-[#174a92] focus:outline-none focus:ring-2 focus:ring-[#1E5BB3]/40 sm:w-auto">
+                        Save changes
+                    </button>
+                    <button type="reset"
+                        class="w-full rounded-lg border border-gray-200 bg-white px-6 py-3.5 font-medium text-[#1E5BB3] duration-200 hover:bg-gray-100 sm:w-auto">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="mt-auto border-t border-gray-200 bg-white">
+        <div class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-6 md:flex-row md:justify-between md:gap-6 md:px-6">
+            <nav class="flex flex-col items-center gap-1 text-sm font-medium text-gray-600 md:flex-row md:flex-wrap md:justify-center">
+                <a href="#"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">About</a>
+                <a href="#"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Contact
+                    Us</a>
+                <a href="#"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Partnerships</a>
+                <a href="privacy.html"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Privacy
+                    Policy</a>
+                <a href="terms.html"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Terms
+                    of Service</a>
+            </nav>
+
+            <div class="flex shrink-0 items-center gap-2">
+                <a href="#" title="GitHub" aria-label="GitHub"
+                    class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100">
+                    <img src="../assets/github_light.svg" alt="GitHub" class="block h-5">
+                </a>
+                <a href="#" title="Facebook" aria-label="Facebook"
+                    class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100">
+                    <img src="../assets/facebook-icon.svg" alt="Facebook" class="block h-5">
+                </a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn"
+                    class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100">
+                    <img src="../assets/linkedin.svg" alt="LinkedIn" class="block h-5">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
