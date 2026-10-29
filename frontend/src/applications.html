@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobOps Profile</title>
+    <link rel="stylesheet" href="output.css?v=2">
+    <link rel="icon" type="image/svg+xml" href="../assets/jobops-logo.svg">
+</head>
+
+<body class="flex min-h-screen flex-col">
+    <!-- Logo + Navigation bar-->
+    <header class="flex justify-between border-b-2 border-gray-300 w-[100%]">
+        <a href="home.html" class="h-[10%] w-1/10"><img src="../assets/jobops-logo.svg" alt="JobOps Logo"> </a>
+        <nav>
+            <ul class="flex gap-10">
+                <li class="m-2 text-lg">
+                    <a href="dashboard.html" class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Dashboard</a>
+                </li>
+                <li class="m-2 text-lg"><a href="Applications.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Applications</a></li>
+                <li class="m-2 text-lg"><a href="profile.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Profile</a></li>
+                <li class="m-2 text-lg"><a href="settings.html"
+                        class="block rounded-md p-2 duration-200 transition-colors hover:bg-gray-100 hover:text-[#1E5BB3]">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
+
+    
+    <section class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <div>
+            <h1 class="text-3xl font-medium">My applications</h1>
+            <p class="mt-2 text-sm text-gray-500">Check all the history oof your applications.</p>
+        </div>
+        <a href="application-detail.html" class="rounded-md bg-[#1E5BB3] px-5 py-2 text-center text-sm text-white">View application details</a>
+    </section>
+
+    
+    <nav class="mt-8 flex gap-6 border-b border-gray-200 text-sm">
+        <a href="#all" class="pb-3 text-gray-600 hover:text-[#1E5BB3]">All applications <span class="text-xs text-gray-500">24</span></a>
+        <a href="#in-progress" class="pb-3 text-gray-600 hover:text-[#1E5BB3]">In progress <span class="text-xs text-gray-500">20</span></a>
+        <a href="#closed" class="pb-3 text-gray-600 hover:text-[#1E5BB3]">Closed <span class="text-xs text-gray-500">4</span></a>
+    </nav>
+
+    <!-- All applications -->
+    <section id="all" class="mt-8">
+        <h2 class="mb-3 text-lg font-medium">All applications</h2>
+        <div class="overflow-x-auto rounded-lg border border-gray-200">
+            <table class="w-full min-w-[700px] text-left text-sm">
+                <thead class="bg-gray-50 text-xs text-gray-500">
+                    <tr>
+                        <th class="px-4 py-3 font-medium">Company</th>
+                        <th class="px-4 py-3 font-medium">Role</th>
+                        <th class="px-4 py-3 font-medium">Status</th>
+                        <th class="px-4 py-3 font-medium">Date applied</th>
+                        <th class="px-4 py-3 font-medium">Last updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">V</span><div><p class="font-medium">Vodafone Egypt</p><p class="text-xs text-gray-500">vodafone.com.eg</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">New Cairo, Cairo · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-blue-50 px-2 py-1 text-xs text-[#1E5BB3]">Applied</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">F</span><div><p class="font-medium">Fawry</p><p class="text-xs text-gray-500">fawry.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Senior Product Designer</p><p class="text-xs text-gray-500">Smart Village, Giza · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-blue-50 px-2 py-1 text-xs text-[#1E5BB3]">Applied</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 22, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 22, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">P</span><div><p class="font-medium">Paymob</p><p class="text-xs text-gray-500">paymob.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">Maadi, Cairo · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-amber-50 px-2 py-1 text-xs text-amber-700">Interviewing</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 20, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">I</span><div><p class="font-medium">Instabug</p><p class="text-xs text-gray-500">instabug.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Brand &amp; Product Designer</p><p class="text-xs text-gray-500">Remote · Egypt</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-amber-50 px-2 py-1 text-xs text-amber-700">Interviewing</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 18, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 22, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">V</span><div><p class="font-medium">Valu</p><p class="text-xs text-gray-500">valu.com.eg</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Senior Product Designer</p><p class="text-xs text-gray-500">Alexandria · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-green-50 px-2 py-1 text-xs text-green-700">Offer</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 16, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">O</span><div><p class="font-medium">Orange Egypt</p><p class="text-xs text-gray-500">orange.eg</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Experience Designer</p><p class="text-xs text-gray-500">Remote · Egypt</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-600">Not selected</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 14, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 21, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">T</span><div><p class="font-medium">Talabat Egypt</p><p class="text-xs text-gray-500">talabat.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">Heliopolis, Cairo · On-site</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-600">Withdrawn</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 12, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 18, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-4 text-xs text-gray-500">Showing 7 of 24</p>
+    </section>
+
+    <!-- In progress -->
+    <section id="in-progress" class="mt-12">
+        <h2 class="mb-3 text-lg font-medium">In progress</h2>
+        <div class="overflow-x-auto rounded-lg border border-gray-200">
+            <table class="w-full min-w-[700px] text-left text-sm">
+                <thead class="bg-gray-50 text-xs text-gray-500">
+                    <tr>
+                        <th class="px-4 py-3 font-medium">Company</th>
+                        <th class="px-4 py-3 font-medium">Role</th>
+                        <th class="px-4 py-3 font-medium">Status</th>
+                        <th class="px-4 py-3 font-medium">Date applied</th>
+                        <th class="px-4 py-3 font-medium">Last updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">V</span><div><p class="font-medium">Vodafone Egypt</p><p class="text-xs text-gray-500">vodafone.com.eg</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">New Cairo, Cairo · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-blue-50 px-2 py-1 text-xs text-[#1E5BB3]">Applied</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">F</span><div><p class="font-medium">Fawry</p><p class="text-xs text-gray-500">fawry.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Senior Product Designer</p><p class="text-xs text-gray-500">Smart Village, Giza · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-blue-50 px-2 py-1 text-xs text-[#1E5BB3]">Applied</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 22, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 22, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">P</span><div><p class="font-medium">Paymob</p><p class="text-xs text-gray-500">paymob.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">Maadi, Cairo · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-amber-50 px-2 py-1 text-xs text-amber-700">Interviewing</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 20, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">I</span><div><p class="font-medium">Instabug</p><p class="text-xs text-gray-500">instabug.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Brand &amp; Product Designer</p><p class="text-xs text-gray-500">Remote · Egypt</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-amber-50 px-2 py-1 text-xs text-amber-700">Interviewing</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 18, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 22, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">V</span><div><p class="font-medium">Valu</p><p class="text-xs text-gray-500">valu.com.eg</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Senior Product Designer</p><p class="text-xs text-gray-500">Alexandria · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-green-50 px-2 py-1 text-xs text-green-700">Offer</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 16, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 23, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="mt-4 text-xs text-gray-500">Showing 5 of 20</p>
+    </section>
+
+    <!-- Closed  -->
+    <section id="closed" class="mt-12">
+        <h2 class="mb-3 text-lg font-medium">Closed</h2>
+        <div class="overflow-x-auto rounded-lg border border-gray-200">
+            <table class="w-full min-w-[700px] text-left text-sm">
+                <thead class="bg-gray-50 text-xs text-gray-500">
+                    <tr>
+                        <th class="px-4 py-3 font-medium">Company</th>
+                        <th class="px-4 py-3 font-medium">Role</th>
+                        <th class="px-4 py-3 font-medium">Status</th>
+                        <th class="px-4 py-3 font-medium">Date applied</th>
+                        <th class="px-4 py-3 font-medium">Last updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">O</span><div><p class="font-medium">Orange Egypt</p><p class="text-xs text-gray-500">orange.eg</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Experience Designer</p><p class="text-xs text-gray-500">Remote · Egypt</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-600">Not selected</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 14, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 21, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">T</span><div><p class="font-medium">Talabat Egypt</p><p class="text-xs text-gray-500">talabat.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">Heliopolis, Cairo · On-site</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-600">Withdrawn</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 12, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 18, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">V</span><div><p class="font-medium">Vezeeta</p><p class="text-xs text-gray-500">vezeeta.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">UX Designer</p><p class="text-xs text-gray-500">Dokki, Giza · Hybrid</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-600">Not selected</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 8, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 15, 2026</td>
+                    </tr>
+                    <tr class="border-t border-gray-200">
+                        <td class="px-4 py-3"><div class="flex items-center gap-3"><span class="flex h-8 w-8 items-center justify-center rounded-md bg-gray-100 text-xs font-medium">E</span><div><p class="font-medium">Elmenus</p><p class="text-xs text-gray-500">elmenus.com</p></div></div></td>
+                        <td class="px-4 py-3"><p class="font-medium">Product Designer</p><p class="text-xs text-gray-500">Zamalek, Cairo · On-site</p></td>
+                        <td class="px-4 py-3"><span class="rounded-full bg-gray-100 px-2 py-1 text-xs text-gray-600">Not selected</span></td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 5, 2026</td>
+                        <td class="px-4 py-3 text-xs text-gray-500">Oct 12, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+    <footer class="mt-auto border-t border-gray-200 bg-white">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6">
+            <nav class="flex items-center gap-1 text-sm font-medium text-gray-600">
+                <a href="#"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">About</a>
+                <a href="#"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Contact
+                    Us</a>
+                <a href="#"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Partnerships</a>
+                <a href="privacy.html"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Privacy
+                    Policy</a>
+                <a href="terms.html"
+                    class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]">Terms
+                    of Service</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="#" title="GitHub" aria-label="GitHub"
+                    class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100">
+                    <img src="../assets/github_light.svg" alt="GitHub" class="block h-5">
+                </a>
+                <a href="#" title="Facebook" aria-label="Facebook"
+                    class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100">
+                    <img src="../assets/facebook-icon.svg" alt="Facebook" class="block h-5">
+                </a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn"
+                    class="rounded-md border border-gray-300 p-2 transition-colors duration-200 hover:bg-gray-100">
+                    <img src="../assets/linkedin.svg" alt="LinkedIn" class="block h-5">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
