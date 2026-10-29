@@ -7,40 +7,40 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
 
-  <body class="bg-white text-gray-900">
+  <body class="flex min-h-screen flex-col bg-white text-gray-900">
     <header
-      class="flex items-center justify-between border-b border-gray-300 px-6 py-3"
+      class="flex flex-col gap-2 border-b border-gray-300 px-4 py-3 sm:px-6 md:flex-row md:items-center md:justify-between"
     >
-      <a href="home.html"
-        ><img src="../assets/jobops-logo.svg" alt="JobOps" class="h-8"
+      <a href="home.html" class="shrink-0"
+        ><img src="../assets/jobops-logo.svg" alt="JobOps" class="h-7 sm:h-8"
       /></a>
       <nav>
-        <ul class="flex gap-2">
+        <ul class="flex flex-wrap gap-1 text-sm sm:gap-2 sm:text-base">
           <li>
             <a
               href="dashboard.html"
-              class="block rounded-md px-3 py-2 hover:bg-gray-200"
+              class="block rounded-md px-2 py-2 hover:bg-gray-200 sm:px-3"
               >Dashboard</a
             >
           </li>
           <li>
             <a
               href="applications.html"
-              class="block rounded-md px-3 py-2 font-bold text-[#1E5BB3] hover:bg-gray-200"
+              class="block rounded-md px-2 py-2 font-bold text-[#1E5BB3] hover:bg-gray-200 sm:px-3"
               >Applications</a
             >
           </li>
           <li>
             <a
               href="profile.html"
-              class="block rounded-md px-3 py-2 hover:bg-gray-200"
+              class="block rounded-md px-2 py-2 hover:bg-gray-200 sm:px-3"
               >Profile</a
             >
           </li>
           <li>
             <a
               href="settings.html"
-              class="block rounded-md px-3 py-2 hover:bg-gray-200"
+              class="block rounded-md px-2 py-2 hover:bg-gray-200 sm:px-3"
               >Settings</a
             >
           </li>
@@ -48,35 +48,39 @@
       </nav>
     </header>
 
-    <main class="mx-auto max-w-4xl px-6 py-8">
+    <main class="mx-auto w-full max-w-4xl flex-1 px-4 py-6 sm:px-6 sm:py-8">
       <a href="applications.html" class="text-sm text-[#1E5BB3] hover:underline"
         >← All applications</a
       >
 
       <div
-        class="mt-4 flex flex-col gap-3 pb-5 sm:flex-row sm:items-center sm:justify-between"
+        class="mt-4 flex flex-col gap-3 pb-5 md:flex-row md:items-center md:justify-between"
       >
         <div class="flex flex-wrap items-center gap-3">
-          <h1 class="text-3xl font-bold tracking-tight">Product Designer</h1>
+          <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">
+            Product Designer
+          </h1>
         </div>
-        <div class="flex shrink-0 gap-2">
+        <div class="flex w-full gap-2 md:w-auto md:shrink-0">
           <button
             type="button"
-            class="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-100"
+            class="flex-1 rounded-md border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-100 md:flex-none"
           >
             Archive application
           </button>
           <a
             href="application-form.html"
-            class="rounded-md bg-[#1E5BB3] px-4 py-2 text-sm font-medium text-white hover:bg-[#174a92]"
+            class="flex-1 rounded-md bg-[#1E5BB3] px-4 py-2 text-center text-sm font-medium text-white hover:bg-[#174a92] md:flex-none"
             >Edit application</a
           >
         </div>
       </div>
 
-      <div class="mt-6 divide-y divide-gray-200">
-        <section class="p-6">
-          <h2 class="border-l-4 border-[#1E5BB3] pl-3 text-xl font-bold">
+      <div class="mt-4 divide-y divide-gray-200 sm:mt-6">
+        <section class="py-5 sm:p-6">
+          <h2
+            class="border-l-4 border-[#1E5BB3] pl-3 text-lg font-bold sm:text-xl"
+          >
             Next interview
           </h2>
           <p class="mt-4 font-semibold">
@@ -94,8 +98,10 @@
           >
         </section>
 
-        <section class="p-6">
-          <h2 class="border-l-4 border-[#1E5BB3] pl-3 text-xl font-bold">
+        <section class="py-5 sm:p-6">
+          <h2
+            class="border-l-4 border-[#1E5BB3] pl-3 text-lg font-bold sm:text-xl"
+          >
             Notes
           </h2>
           <p class="mt-4 text-gray-700">
@@ -114,8 +120,10 @@
           >
         </section>
 
-        <section class="p-6">
-          <h2 class="border-l-4 border-[#1E5BB3] pl-3 text-xl font-bold">
+        <section class="py-5 sm:p-6">
+          <h2
+            class="border-l-4 border-[#1E5BB3] pl-3 text-lg font-bold sm:text-xl"
+          >
             Activity
           </h2>
           <ul class="mt-4 space-y-4">
@@ -144,8 +152,10 @@
         </section>
 
         <aside class="divide-y divide-gray-200">
-          <div class="p-6">
-            <h2 class="border-l-4 border-[#1E5BB3] pl-3 text-xl font-bold">
+          <div class="py-5 sm:p-6">
+            <h2
+              class="border-l-4 border-[#1E5BB3] pl-3 text-lg font-bold sm:text-xl"
+            >
               Application details
             </h2>
             <dl class="mt-4 space-y-3 text-sm">
@@ -173,21 +183,25 @@
             >
           </div>
 
-          <div class="p-6">
-            <h2 class="border-l-4 border-[#1E5BB3] pl-3 text-xl font-bold">
+          <div class="py-5 sm:p-6">
+            <h2
+              class="border-l-4 border-[#1E5BB3] pl-3 text-lg font-bold sm:text-xl"
+            >
               Contact
             </h2>
             <p class="mt-4 font-semibold">Jordan Lee</p>
             <p class="text-sm text-gray-600">Design Manager</p>
             <a
               href="mailto:jordan.lee@example.com"
-              class="mt-2 inline-block text-sm text-[#1E5BB3] hover:underline"
+              class="mt-2 inline-block break-all text-sm text-[#1E5BB3] hover:underline"
               >jordan.lee@example.com</a
             >
           </div>
 
-          <div class="p-6">
-            <h2 class="border-l-4 border-[#1E5BB3] pl-3 text-xl font-bold">
+          <div class="py-5 sm:p-6">
+            <h2
+              class="border-l-4 border-[#1E5BB3] pl-3 text-lg font-bold sm:text-xl"
+            >
               Documents
             </h2>
             <a
@@ -202,9 +216,11 @@
 
     <footer class="mt-auto border-t border-gray-200 bg-white">
       <div
-        class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6"
+        class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-5 sm:px-6 md:flex-row md:justify-between md:gap-6 md:py-6"
       >
-        <nav class="flex items-center gap-1 text-sm font-medium text-gray-600">
+        <nav
+          class="flex flex-wrap justify-center gap-1 text-sm font-medium text-gray-600"
+        >
           <a
             href="#"
             class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"

@@ -7,36 +7,56 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
 
-  <body class="bg-white text-gray-900">
+  <body class="flex min-h-screen flex-col bg-white text-gray-900">
     <header
-      class="flex items-center justify-between border-b border-gray-300 px-6 py-3"
+      class="flex flex-col gap-2 border-b border-gray-300 px-4 py-3 sm:px-6 md:flex-row md:items-center md:justify-between"
     >
-      <a href="home.html"
-        ><img src="../assets/jobops-logo.svg" alt="JobOps" class="h-8"
+      <a href="home.html" class="shrink-0"
+        ><img src="../assets/jobops-logo.svg" alt="JobOps" class="h-7 sm:h-8"
       /></a>
       <nav>
-        <ul class="flex gap-6">
-          <li><a href="dashboard.html">Dashboard</a></li>
+        <ul class="flex flex-wrap gap-1 text-sm sm:gap-2 sm:text-base">
           <li>
-            <a href="applications.html" class="font-bold text-[#1E5BB3]"
+            <a
+              href="dashboard.html"
+              class="block rounded-md px-2 py-2 hover:bg-gray-200 sm:px-3"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a
+              href="applications.html"
+              class="block rounded-md px-2 py-2 font-bold text-[#1E5BB3] hover:bg-gray-200 sm:px-3"
               >Applications</a
             >
           </li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="settings.html">Settings</a></li>
+          <li>
+            <a
+              href="profile.html"
+              class="block rounded-md px-2 py-2 hover:bg-gray-200 sm:px-3"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="block rounded-md px-2 py-2 hover:bg-gray-200 sm:px-3"
+              >Settings</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main class="mx-auto max-w-6xl px-6 py-8">
-      <h1 class="mt-4 text-3xl font-bold">Edit application</h1>
+    <main class="mx-auto w-full max-w-6xl flex-1 px-4 py-6 sm:px-6 sm:py-8">
+      <h1 class="text-2xl font-bold sm:text-3xl">Edit application</h1>
       <p class="mt-1 text-gray-600">
         Keep the details up to date as your application moves forward.
       </p>
 
       <div class="mt-6 grid gap-8 lg:grid-cols-3">
         <form class="space-y-6 lg:col-span-2">
-          <section class="rounded-xl border border-gray-200 p-5">
+          <section class="rounded-xl border border-gray-200 p-4 sm:p-5">
             <h2 class="text-lg font-semibold">Role and company</h2>
             <div class="mt-4 grid gap-4 sm:grid-cols-2">
               <div>
@@ -47,7 +67,7 @@
                   id="company"
                   type="text"
                   required
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 />
               </div>
               <div>
@@ -56,7 +76,7 @@
                   id="role"
                   type="text"
                   required
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 />
               </div>
               <div class="sm:col-span-2">
@@ -66,7 +86,7 @@
                 <input
                   id="url"
                   type="url"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 />
               </div>
               <div>
@@ -76,7 +96,7 @@
                 <input
                   id="location"
                   type="text"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 />
               </div>
               <div>
@@ -85,7 +105,7 @@
                 >
                 <select
                   id="arrangement"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 >
                   <option>On site</option>
                   <option>Hybrid</option>
@@ -95,7 +115,7 @@
             </div>
           </section>
 
-          <section class="rounded-xl border border-gray-200 p-5">
+          <section class="rounded-xl border border-gray-200 p-4 sm:p-5">
             <h2 class="text-lg font-semibold">Application progress</h2>
             <div class="mt-4 grid gap-4 sm:grid-cols-2">
               <div>
@@ -105,7 +125,7 @@
                 <select
                   id="status"
                   required
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 >
                   <option>Saved</option>
                   <option>Applied</option>
@@ -122,7 +142,7 @@
                   id="date"
                   type="date"
                   required
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 />
               </div>
               <div>
@@ -132,7 +152,7 @@
                 <input
                   id="salary"
                   type="text"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 />
               </div>
               <div>
@@ -141,7 +161,7 @@
                 >
                 <select
                   id="source"
-                  class="w-full rounded-md border border-gray-300 px-3 py-2"
+                  class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
                 >
                   <option>Company careers site</option>
                   <option>LinkedIn</option>
@@ -151,7 +171,7 @@
             </div>
           </section>
 
-          <section class="rounded-xl border border-gray-200 p-5">
+          <section class="rounded-xl border border-gray-200 p-4 sm:p-5">
             <h2 class="text-lg font-semibold">Notes and documents</h2>
             <label for="notes" class="mt-4 block text-sm font-medium"
               >Notes</label
@@ -159,7 +179,7 @@
             <textarea
               id="notes"
               rows="4"
-              class="w-full rounded-md border border-gray-300 px-3 py-2"
+              class="w-full rounded-md border border-gray-300 px-3 py-2 text-base sm:text-sm"
               placeholder="Prepare onboarding redesign and component library case studies for the portfolio review."
             ></textarea>
             <label for="documents" class="mt-4 block text-sm font-medium">
@@ -183,13 +203,13 @@
           <div class="flex flex-col gap-3 sm:flex-row">
             <button
               type="submit"
-              class="rounded-lg bg-[#1E5BB3] px-6 py-3 text-white"
+              class="rounded-lg bg-[#1E5BB3] px-6 py-3 text-white hover:bg-[#174a92]"
             >
               Save changes
             </button>
             <a
               href="application-detail.html"
-              class="rounded-lg border border-gray-300 px-6 py-3 text-center text-[#1E5BB3]"
+              class="rounded-lg border border-gray-300 px-6 py-3 text-center text-[#1E5BB3] hover:bg-gray-100"
               >Cancel</a
             >
           </div>
@@ -199,9 +219,11 @@
 
     <footer class="mt-auto border-t border-gray-200 bg-white">
       <div
-        class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6"
+        class="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-5 sm:px-6 md:flex-row md:justify-between md:gap-6 md:py-6"
       >
-        <nav class="flex items-center gap-1 text-sm font-medium text-gray-600">
+        <nav
+          class="flex flex-wrap justify-center gap-1 text-sm font-medium text-gray-600"
+        >
           <a
             href="#"
             class="rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-gray-100 hover:text-[#1E5BB3]"
